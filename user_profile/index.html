@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Buyer Profile</title>
+</head>
+<body>
+    <section class="user_section">
+        <div class="user_title">
+            <h2>Buyer Profile</h2>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks-buyer" onclick="openCity(event, 'buyer')" id="defaultOpenBuyer">Profile</button>
+            <button class="tablinks-buyer" onclick="openCity(event, 'buyer-orders')">Orders</button>
+            <button class="btn-btn">Logout</button>
+        </div>
+
+        <div id="buyer" class="tabcontent-buyer">
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+        </div>
+
+        <div id="buyer-orders" class="tabcontent-buyer">
+            <h3>Orders</h3>
+            <p>Lorem ipsum</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
