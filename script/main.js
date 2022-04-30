@@ -46,7 +46,7 @@ function renderProduct(id, name, imgSrc, rating, price) {
     let imgLink = clone.firstElementChild;
     imgLink.href = link; //////////////////??????????????????????????
     let img = imgLink.firstElementChild;
-    imgSrc ? (img.src = 'assets/img/' + imgSrc) : null;
+    imgSrc ? (img.src = 'http://shop.test/storage/img/' + imgSrc) : null;
     let figcaption = clone.lastElementChild;
     let title = figcaption.querySelector('h3 a');
     title.textContent = name;
