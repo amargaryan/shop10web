@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+    border-radius: 5px;
+}   
+
+.shop-links {
+    text-align: center;
+    /* float: right; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    min-width: 100%;
+}
+
+.product{
+    /* margin: 10px; */
+    background-color: #F5F5DC;
+    /* background-color: black; */
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #b3b39f;
+    border-bottom: 1px solid #b3b39f;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.7em;
+    padding: 3px 0 3px 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.star-icon {
+    min-width: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.icons {
+    display: flex;
+}
+
+.price {
+    float: right;
+    padding: 10px 10px 10px 1px;
+    font-size: 20px;
+    font-family: Libre Bodoni; 
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 15px;
+}
+
+.button {
+    font: bold 14px Arial;
+    /* background-color: #F5F5DC;  */
+    background-color: black; 
+    /* color: rgb(40, 205, 210); */
+    /* color: rgb(168, 229, 200); */
+    /* color: rgb(106, 187, 187); */
+    color: #38fc6c;
+    padding: 8px 16px 8px 16px;
+    margin: 10px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+hr {
+    border-width: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+  
+figure {
+    padding: 5px 5px 0 5px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+  
+figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+    
+figcaption {
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+  
+.masonry {
+    width: 85%;
+    margin: 20px 0 0 0;
+    margin-right: auto;
+    margin-left: auto;
+    column-count: 4;
+}
+
+@media screen and (max-width: 900px) {
+    .masonry {
+        width: 90%;
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .masonry {
+        width: 95%;
+        column-count: 1;
+    }
+}
