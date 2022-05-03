@@ -10,10 +10,7 @@ function renderShop(shopName, href) {
 
 // render products
 function appendRating(ratingDiv, rating) {
-    // let starIconSrc = 'assets/img/star-icon.png';
-    // let starIconSrc = 'assets/img/Gold_Star.png';
     let starIconSrc = 'assets/img/2048px-Full_Star_Yellow.png';
-    // let starIconSrc = 'assets/img/Star_Solid.png';
     for (let i = 0; i < Math.floor(rating); i++) {
         let img = document.createElement('img');
         img.src = starIconSrc;
@@ -38,19 +35,18 @@ function appendRating(ratingDiv, rating) {
 function renderProduct(id, name, imgSrc, rating, price) {
     const products = document.getElementsByClassName('masonry')[0];
     let toClone = document.getElementById('for-clone');
-    // console.log(toClone);
     let clone = toClone.cloneNode(true);
     let link = '#'; //////////////////??????????????????????????
     clone.id = id;
     clone.classList.remove('hide');
     let imgLink = clone.firstElementChild;
-    imgLink.href = link; //////////////////??????????????????????????
+    imgLink.href = link;
     let img = imgLink.firstElementChild;
     imgSrc ? (img.src = 'http://shop.test/storage/img/' + imgSrc) : null;
     let figcaption = clone.lastElementChild;
     let title = figcaption.querySelector('h3 a');
     title.textContent = name;
-    title.href = link; //////////////////????????????????????????????
+    title.href = link;
 
     let ratingDiv = figcaption.querySelector('.icons');
     appendRating(ratingDiv, rating);

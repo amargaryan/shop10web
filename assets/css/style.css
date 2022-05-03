@@ -16,7 +16,6 @@ img {
 
 .shop-links {
     text-align: center;
-    /* float: right; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,9 +25,7 @@ img {
 }
 
 .product{
-    /* margin: 10px; */
     background-color: #F5F5DC;
-    /* background-color: black; */
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #b3b39f;
     border-bottom: 1px solid #b3b39f;
@@ -68,11 +65,7 @@ img {
 
 .button {
     font: bold 14px Arial;
-    /* background-color: #F5F5DC;  */
     background-color: black; 
-    /* color: rgb(40, 205, 210); */
-    /* color: rgb(168, 229, 200); */
-    /* color: rgb(106, 187, 187); */
     color: #38fc6c;
     padding: 8px 16px 8px 16px;
     margin: 10px;
