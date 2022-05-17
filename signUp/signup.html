@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+</head>
+<body>
+	<form>
+		<div>
+			<h1>10Shop</h1><br>
+            <div class="btn-group">
+                <button id="button" class="button" onclick="location.href='file:///C:/Users/HP/OneDrive/%D5%8D%D5%A5%D5%B2%D5%A1%D5%B6/JavaScript/my_shop/Sign%20In/signin.html'">SignIn</button>
+                <button id="button" class="button disabled">SignUp</button>
+            </div>
+            
+			<h2>SIGN UP</h1>
+	
+			<div class="inputs twoInputs">
+			    <input  name="first_name" type="text" id="name" class="input" placeholder="First Name*" required="required">
+		    
+			    <input name="last_name" type="text" id="name" class="input"  placeholder="Last Name*" required="required">
+		    </div>
+
+			<div class="inputs">
+			    <input name="email" type="text" id="email" class="input"  placeholder="example@gmail.com*" required="required">
+			</div>
+            
+			<div class="inputs">
+				<label id="type" required="required">Type*</label>
+			    <input name="seller" type="radio" name="type" id="seller">
+			    <label>Seller</label>
+			    <input name="buyer" type="radio" name="type" id="buyer">
+			    <label>Buyer</label>
+			</div>
+			
+			<div class="inputs">
+				<label id="gender" required="required">Gender*</label>
+			    <input name="male" type="radio" id="male">
+			    <label>Male</label><br>
+			    <input name="female" type="radio" id="female">
+			    <label>Female</label>
+			</div>
+
+			<div class="inputs">
+			    <input name="password" type="password" id="password" class="input"  placeholder="Password*" required="required">
+			</div>
+
+			<div class="inputs">
+			    <input name="confirm_password" type="password" id="confirmpassword" class="input"  placeholder="Confirm Password*" required="required">
+			</div><br><br>
+			
+			<button  id="submit" id="button" class="button">Submit</button><br><br>
+		</div>
+	</form>
+</body>
+</html>
+
+
