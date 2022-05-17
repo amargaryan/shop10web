@@ -120,7 +120,7 @@ function autocomplete(inp, arr) {
 }
 
 async function isLogin () {
-    let isLogin = false; //await fetch(...)
+    let isLogin = false;
     let id = document.getElementById('login');
     if (isLogin) {
 
