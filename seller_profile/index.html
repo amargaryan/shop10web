@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Seller Profile</title>
+</head>
+<body>
+    <section class="user_section">
+        <div class="user_title">
+            <h2>Seller Profile</h2>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks_seller" onclick="myFuncSeller(event, 'seller')" id="defaultOpenSeller">Seller</button>
+            <button class="tablinks_seller" onclick="myFuncSeller(event, 'seller-orders')">Orders</button>
+            <button class="tablinks_seller" onclick="myFuncSeller(event, 'add-shop')">Add Shop</button>
+            <button class="btn-btn">Logout</button>
+        </div>
+
+        <div id="seller" class="tabcontent-seller">
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <p class="title">Shop Seller</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+        </div>
+
+        <div id="seller-orders" class="tabcontent-seller">
+            <h3>Orders</h3>
+            <p>Lorem ipsum</p>
+        </div>
+
+        <div id="add-shop" class="tabcontent-seller">
+            <div class="user-seller-container">
+            <h3>Add Shop</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInput" class="form-label">Title</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="exampleInput" 
+                        name="text" 
+                        aria-describedby="title-aria"
+                    />
+                    <div id="title-aria" class="form-text">Enter a title</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInput1" class="form-label">Description</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="exampleInput1" 
+                        name="description"
+                        aria-describedby="description-aria"
+                    />
+                    <div id="description-aria" class="form-text">Enter a description</div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option value="1" selected>One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelect">Choose Category</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInput2" class="form-label">Image</label>
+                    <input type="file" class="form-control" id="exampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInput3" class="form-label">Price</label>
+                    <input 
+                        type="number" 
+                        class="form-control" 
+                        id="exampleInput3" min="1"
+                        aria-describedby="price-aria"
+                    />
+					<div id="price-aria" class="form-text">Enter a price</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

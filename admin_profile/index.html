@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Admin Profile</title>
+</head>
+<body>
+    <section class="user_section">
+        <div class="user_title">
+            <h2>Admin Profile</h2>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks_admin" onclick="openFunc(event, 'admin')" id="defaultOpenAdmin">Admin</button>
+            <button class="tablinks_admin" onclick="openFunc(event, 'notifications')">Notifications</button>
+            <button class="tablinks_admin" onclick="openFunc(event, 'categories')">Categories</button>
+            <button class="btn-btn">Logout</button>
+        </div>
+
+        <div id="admin" class="tabcontent_admin">
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <p class="title">CEO & Founder, Admin</p>
+                <p>Shop</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+        </div>
+
+        <div id="notifications" class="tabcontent_admin">
+            <h3>Notifications</h3>
+            <p>Lorem ipsum</p>
+        </div>
+
+        <div id="categories" class="tabcontent_admin">
+            <h3>Categories</h3>
+            <p>Lorem ipsum</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

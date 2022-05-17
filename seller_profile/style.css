@@ -7,23 +7,27 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-.user-buyer-container {
+.user-seller-container {
     width: 40%; 
     margin:0 auto;
 }
 
-.user-buyer-title {
+input {
+    height:  0%;
+}
+
+.user_title {
     margin: 12px 10px 12px 10px;
 }
 
-.tab-buyer {
+.tab {
     float: left;
     background-color: #f1f1f1;
     width: 20%;
     height: 118vh;
 }
 
-.tab-buyer button {
+.tab button {
     display: block;
     background-color: inherit;
     color: black;
@@ -37,15 +41,15 @@ body {
     font-size: 17px;
 }
 
-.tab-buyer button:hover {
+.tab button:hover {
     background-color: #ddd;
 }
 
-.tab-buyer button.active {
+.tab button.active {
     background-color: #ccc;
 }
 
-.tabcontent-buyer {
+.tabcontent-seller {
     float: left;
     padding: 20px 18px;
     border: 1px solid #ccc;
@@ -92,35 +96,16 @@ a:hover {
 }
 
 .btn-btn {
-    color: red !important;
-    margin-top: 300px;
-}
-
-.borderless {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-input {
-    height:  0%;
+    color:red !important;
+    margin-top: 250px;
 }
 
 @media (max-width: 450px) {
-    .tabcontent-buyer {
+    .tabcontent {
         font-size: 14px;
     }
 
-    .tab-buyer button {
+    .tab button {
         font-size: 12px;
     }
-
-    #buyer {
-        font-size: 11px;
-    }
-
-    #type, #gender {
-        font-size: 11px;
-    }
 }
-
