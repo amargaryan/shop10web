@@ -1,0 +1,87 @@
+body {
+  background-color: #8585ad;
+  margin: auto;
+  align-items: center;
+  color:  white;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#email,#password{
+  width: 80%;
+}
+
+div {
+  width: 500px;
+  margin-top: 50px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  background-color: #33334d;
+  border-radius: px;
+  padding: 10px;
+}
+h1 {
+  color: white;
+  /*text-shadow: 4px 4px 8px white;*/
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: bold;
+
+}
+h2 {
+  font-size: 15px;
+  font-variant: small-caps;
+
+}
+.input{
+  font-size: 15px;
+  background-color: inherit;
+  border-color: #8585ad;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.button {
+  width: 45%;
+  background-color: #2d8659; 
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#button{
+  width: 49%;
+}
+#button:hover {
+  background: #194d33;
+}
+
+.disabled {
+  width: 49%;
+  text-align: center;
+  opacity: 0.6;
+  cursor: not-allowed;
+  padding: 10px 10px;
+  text-align: center;
+}
+#submit{
+ width: 90%; 
+}
+#submit:hover {
+  background: #194d33;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: inherit;
+}
+.btn-group {
+  width: 90%;
+}
+
+
